@@ -5,107 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO -->
-    <title>Family-Friendly by Polo + EV Charger | Mashomack Polo Fields Rental</title>
-    <meta name="description" content="Vacation rental directly across from Mashomack Polo Fields in Pine Plains, NY. Watch polo from your porch! 3BR/2BA, EV charger, pets welcome. Hotels nearby - book the best lodging in Pine Plains for your Hudson Valley getaway.">
-    <meta name="keywords" content="Mashomack Polo Fields rental, Pine Plains lodging, Pine Plains hotel, Pine Plains bed and breakfast, Pine Plains B&B, Pine Plains vacation rental, Pine Plains Airbnb, Pine Plains VRBO, Hudson Valley hotel, Hudson Valley lodging, Hudson Valley B&B, Hudson Valley bed and breakfast, Hudson Valley vacation rental, Hudson Valley Airbnb, polo enthusiasts rental, family lodging Hudson Valley, pet friendly hotel Hudson Valley, upstate New York hotel, upstate New York B&B, Catskills lodging, Rhinebeck hotel, Red Hook vacation rental, Mashomack vacation rental, Pine Plains rental home, Hudson Valley getaway, Pine Plains accommodations">
-    <meta name="author" content="Pine Plains Vacation Rentals">
+    <title>GetawayPads | Hudson Valley Vacation Rentals</title>
+    <meta name="description" content="Discover beautiful vacation rentals in the Hudson Valley. Stay across from Mashomack Polo Fields in Pine Plains, NY. Family-friendly homes with EV chargers, game rooms, and more.">
+    <meta name="keywords" content="Hudson Valley vacation rental, Pine Plains lodging, Mashomack Polo Fields, Hudson Valley Airbnb, Hudson Valley VRBO, family rental Hudson Valley, pet friendly rental NY">
+    <meta name="author" content="GetawayPads">
     <meta name="robots" content="index, follow">
     
-    <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Family-Friendly by Polo + EV Charger | Mashomack Polo Fields Rental">
-    <meta property="og:description" content="Best lodging in Pine Plains! Stay across from Mashomack Polo Fields. 3BR/2BA, EV charger, pets welcome. Compare hotels, B&Bs, and vacation rentals in Hudson Valley.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="GetawayPads | Hudson Valley Vacation Rentals">
+    <meta property="og:description" content="Beautiful vacation rentals in Pine Plains, NY. Across from Mashomack Polo Fields.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.getawaypads.com/">
     <meta property="og:image" content="https://www.getawaypads.com/36%20Briarcliff%20Photos/1-Hero.jpeg">
-    <meta property="og:locale" content="en_US">
     
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Family-Friendly by Polo + EV Charger | Mashomack Polo Fields Rental">
-    <meta name="twitter:description" content="Best lodging in Pine Plains! Across from Mashomack Polo Fields. 3BR/2BA, EV charger, pets welcome. Hotels & vacation rentals comparison.">
-    
-    <!-- Structured Data / JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "VacationRental",
-      "name": "Family-Friendly by Polo + EV Charger",
-      "description": "Vacation rental directly across from Mashomack Polo Fields in Pine Plains, NY. Watch polo matches from your porch! 3BR/2BA, EV charger, pet-friendly, perfect for polo enthusiasts and families.",
-      "numberOfRooms": 3,
-      "numberOfBedrooms": 3,
-      "numberOfBathroomsTotal": 2,
-      "occupancy": {
-        "@type": "QuantitativeValue",
-        "maxValue": 10,
-        "value": 10
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Pine Plains",
-        "addressRegion": "NY",
-        "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "41.9",
-        "longitude": "-73.7"
-      },
-      "amenity": [
-        "EV Charger",
-        "Free Parking",
-        "WiFi",
-        "Kitchen",
-        "Washer/Dryer",
-        "Air Conditioning",
-        "Heating",
-        "Fire Pit",
-        "BBQ Grill",
-        "Game Room",
-        "Air Hockey",
-        "Ping Pong",
-        "Pets Allowed"
-      ],
-      "nearby": [
-        "Mashomack Polo Fields",
-        "Stissing Mountain",
-        "Rhinebeck",
-        "Red Hook",
-        "Hudson Valley",
-        "Bard College",
-        "Hudson NY",
-        "Ski Resorts",
-        "Farm breweries",
-        "Antiques"
-      ],
-      "url": "https://www.getawaypads.com/",
-      "priceRange": "$$",
-      "starRating": {
-        "@type": "Rating",
-        "ratingValue": "4.95"
-      }
-    }
-    </script>
-    
-    <!-- Local Business Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LodgingBusiness",
-      "name": "Family-Friendly by Polo + EV Charger",
-      "description": "Family-friendly vacation rental directly across from Mashomack Polo Fields in Pine Plains, NY",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Pine Plains",
-        "addressRegion": "NY",
-        "addressCountry": "US"
-      },
-      "telephone": "+1-555-123-4567",
-      "url": "https://www.getawaypads.com/",
-      "priceRange": "$$"
-    }
-    </script>
-    
-    <title>Family-Friendly by Polo + EV Charger | Pine Plains Vacation Rental</title>
+    <title>GetawayPads | Hudson Valley Vacation Rentals</title>
     <style>
         * {
             margin: 0;
@@ -214,22 +127,96 @@
             display: inline-block;
         }
         
-        /* Gallery */
-        .gallery {
+        /* Property Cards */
+        .properties-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
         }
-        .gallery img {
+        .property-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .property-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+        .property-card img {
             width: 100%;
             height: 220px;
             object-fit: cover;
-            border-radius: 12px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .gallery img:hover {
-            transform: scale(1.03);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        .property-card-content {
+            padding: 25px;
+        }
+        .property-card h3 {
+            color: #1a365d;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        .property-card p {
+            color: #4a5568;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+        .property-card-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        .property-feature {
+            background: #f7fafc;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #4a5568;
+        }
+        .property-card a {
+            display: inline-block;
+            background: #4299e1;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .property-card a:hover {
+            background: #3182ce;
+        }
+        
+        /* Attractions Gallery */
+        .attractions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .attraction-card {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .attraction-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .attraction-card-info {
+            padding: 15px;
+            background: white;
+        }
+        .attraction-card h3 {
+            color: #2d3748;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+        .attraction-card p {
+            color: #718096;
+            font-size: 0.9rem;
         }
         
         /* Description */
@@ -253,26 +240,23 @@
             margin-bottom: 15px;
         }
         
-        /* Amenities */
-        .amenities-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-            gap: 15px;
-        }
-        .amenity {
-            display: flex;
-            align-items: center;
-            padding: 12px 15px;
+        /* Location Box */
+        .location-box {
             background: #f7fafc;
-            border-radius: 8px;
-            transition: background 0.2s;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 4px solid #4299e1;
         }
-        .amenity:hover {
-            background: #edf2f7;
+        .location-box h3 {
+            margin-bottom: 10px;
         }
-        .amenity-icon {
-            margin-right: 12px;
-            font-size: 1.2rem;
+        .location-box ul {
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+        .location-box li {
+            margin-bottom: 8px;
+            color: #4a5568;
         }
         
         /* Contact CTA */
@@ -293,14 +277,20 @@
             opacity: 0.95;
             margin-bottom: 30px;
         }
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
         .contact-cta a {
             display: inline-block;
             background: white;
             color: #667eea;
-            padding: 18px 50px;
+            padding: 18px 40px;
             text-decoration: none;
             border-radius: 50px;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 600;
             transition: transform 0.3s, box-shadow 0.3s;
         }
@@ -308,31 +298,9 @@
             transform: translateY(-3px);
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
-        
-        /* Platforms */
-        .platforms {
-            text-align: center;
-            padding: 40px 20px;
-            background: #edf2f7;
-        }
-        .platforms p {
-            font-size: 1.1rem;
-            color: #4a5568;
-            margin-bottom: 20px;
-        }
-        .platforms a {
-            display: inline-block;
-            margin: 0 15px;
-            padding: 12px 30px;
-            background: #2d3748;
+        .contact-cta .phone {
+            background: #48bb78;
             color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 500;
-            transition: background 0.2s;
-        }
-        .platforms a:hover {
-            background: #4a5568;
         }
         
         /* Footer */
@@ -343,159 +311,29 @@
             color: white;
         }
         
-        /* Location Map */
-        .location-box {
-            background: #f7fafc;
-            padding: 25px;
-            border-radius: 12px;
-            border-left: 4px solid #4299e1;
-        }
-        .location-box h3 {
-            margin-bottom: 10px;
-        }
-        
-        /* Sleeping */
-        .sleeping-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 20px;
-        }
-        .bedroom-card {
-            background: #f7fafc;
-            padding: 20px;
-            border-radius: 12px;
-            text-align: center;
-        }
-        .bedroom-card h4 {
-            color: #2d3748;
-            margin-bottom: 8px;
-        }
-        .bedroom-card .beds {
-            font-size: 1.5rem;
-            margin-bottom: 5px;
-        }
-        
-        /* Availability Calendar */
-        .calendar-controls {
-            display: flex;
-            justify-content: space-between;
+        /* Polo Badge */
+        .polo-badge {
+            display: inline-flex;
             align-items: center;
-            margin-bottom: 20px;
-        }
-        .calendar-controls h3 {
-            font-size: 1.3rem;
-            color: #2d3748;
-        }
-        .calendar-nav {
-            display: flex;
-            gap: 10px;
-        }
-        .calendar-nav button {
+            background: #fed7aa;
+            color: #c05621;
             padding: 8px 16px;
-            border: none;
-            background: #4299e1;
-            color: white;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background 0.2s;
-        }
-        .calendar-nav button:hover {
-            background: #3182ce;
-        }
-        .calendar-legend {
-            display: flex;
-            gap: 20px;
-            margin-bottom: 20px;
-            font-size: 0.9rem;
-        }
-        .legend-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .legend-color {
-            width: 20px;
-            height: 20px;
-            border-radius: 4px;
-        }
-        .legend-available {
-            background: #c6f6d5;
-            border: 2px solid #48bb78;
-        }
-        .legend-booked {
-            background: #fed7d7;
-            border: 2px solid #f56565;
-        }
-        .calendar-grid {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            gap: 4px;
-        }
-        .calendar-header {
-            text-align: center;
-            padding: 10px;
+            border-radius: 20px;
             font-weight: 600;
-            color: #4a5568;
-            background: #edf2f7;
-            border-radius: 4px;
-        }
-        .calendar-day {
-            aspect-ratio: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 5px;
-            border-radius: 6px;
-            font-size: 0.9rem;
-            cursor: default;
-            transition: transform 0.2s;
-        }
-        .calendar-day.available {
-            background: #c6f6d5;
-            border: 2px solid #48bb78;
-        }
-        .calendar-day.booked {
-            background: #fed7d7;
-            border: 2px solid #f56565;
-        }
-        .calendar-day.empty {
-            background: #f7fafc;
-        }
-        .calendar-day .day-num {
-            font-weight: 600;
-        }
-        .calendar-day .status {
-            font-size: 0.7rem;
-            margin-top: 2px;
-        }
-        .calendar-loading {
-            text-align: center;
-            padding: 40px;
-            color: #718096;
-        }
-        .calendar-error {
-            text-align: center;
-            padding: 20px;
-            background: #fed7d7;
-            border-radius: 8px;
-            color: #c53030;
+            margin-bottom: 15px;
         }
     </style>
 </head>
 <body>
-    <!-- Hero Section with Polo Photo -->
+    <!-- Hero Section -->
     <div class="hero">
-        <img loading="lazy" src="36 Briarcliff Photos/1-Hero.jpeg" alt="Mashomack Polo Fields">
+        <img loading="lazy" src="36 Briarcliff Photos/1-Hero.jpeg" alt="Hudson Valley Retreat">
         <div class="hero-overlay">
-            <h1>Family-Friendly by Polo + EV Charger</h1>
+            <h1>GetawayPads</h1>
             <p class="tagline">
                 <span>🏇 Across from Mashomack Polo</span>
-                <span>🏠 3 Bed / 2 Bath</span>
-                <span>👨‍👩‍👧‍👦 Sleeps 10</span>
-                <span>🐕 Pets Welcome</span>
-                <span>⚡ EV Charger</span>
+                <span>🌲 Hudson Valley, NY</span>
+                <span>🏠 Vacation Rentals</span>
             </p>
         </div>
     </div>
@@ -508,11 +346,6 @@
             <div class="stat-label">Guest Rating</div>
         </div>
         <div class="stat">
-            <div class="stat-icon">📍</div>
-            <div class="stat-value">Pine Plains</div>
-            <div class="stat-label">Hudson Valley, NY</div>
-        </div>
-        <div class="stat">
             <div class="stat-icon">🏅</div>
             <div class="stat-value">Top 5%</div>
             <div class="stat-label">Airbnb Rated</div>
@@ -521,6 +354,11 @@
             <div class="stat-icon">🎯</div>
             <div class="stat-value">Superhost</div>
             <div class="stat-label">2 Years Hosting</div>
+        </div>
+        <div class="stat">
+            <div class="stat-icon">🐕</div>
+            <div class="stat-value">Pet Friendly</div>
+            <div class="stat-label">All Properties</div>
         </div>
     </div>
 
@@ -531,9 +369,9 @@
             <div class="description-grid">
                 <div>
                     <h3>Charming & Spacious</h3>
-                    <p>Escape to this beautifully appointed 3-bedroom, 2-bathroom home nestled on 4 private acres directly across from the prestigious Mashomack Polo Fields. Perfect for families or groups seeking a tranquil getaway with easy access to Hudson Valley attractions.</p>
-                    <p>Unlike traditional hotels or B&Bs in Pine Plains, our vacation rental offers complete privacy, full kitchen, and more space for families. Compare our rates with local hotels and bed and breakfasts - you'll get more for your money!</p>
-                    <p>The open-concept living area flows seamlessly into a gourmet kitchen stocked with everything you need to prepare memorable meals. Cozy up by the fireplace or head outside to enjoy the expansive yard, fire pit, and al fresco dining on the patio.</p>
+                    <p>Escape to our beautifully appointed vacation rentals nestled on private acres directly across from the prestigious Mashomack Polo Fields. Perfect for families or groups seeking a tranquil getaway with easy access to Hudson Valley attractions.</p>
+                    <p>Unlike traditional hotels or B&Bs in Pine Plains, our vacation rentals offer complete privacy, full kitchens, and more space for families. Compare our rates with local hotels and bed and breakfasts - you'll get more for your money!</p>
+                    <p>The open-concept living areas flow seamlessly into gourmet kitchens stocked with everything you need to prepare memorable meals. Cozy up by the fireplace or head outside to enjoy the expansive yards, fire pits, and al fresco dining.</p>
                 </div>
                 <div>
                     <h3>Endless Activities</h3>
@@ -541,109 +379,110 @@
                     <p><strong>Fall:</strong> Experience stunning foliage, apple picking, and pumpkin patches.</p>
                     <p><strong>Winter:</strong> Hit the slopes at nearby ski resorts or enjoy cozy nights by the fire.</p>
                     <p><strong>Spring:</strong> Hike Stissing Mountain or explore blooming gardens throughout the valley.</p>
-                    <p><strong>Why Choose Our Rental Over Other Pine Plains Hotels or B&Bs?</strong> Pet-friendly, EV charging, game room, and direct polo field views you won't find at local inns.</p>
+                    <p><strong>Why Choose Our Rentals?</strong> Pet-friendly, EV charging, game rooms, and direct polo field views you won't find at local inns.</p>
                 </div>
             </div>
         </div>
 
-        <!-- Photo Gallery -->
+        <!-- Our Properties -->
         <div class="section">
-            <h2>Photo Tour</h2>
-            <div class="gallery">
-                <img loading="lazy" src="36 Briarcliff Photos/2-Location.jpeg" alt="Location">
-                <img loading="lazy" src="36 Briarcliff Photos/3-location.jpeg" alt="Location">
-                <img loading="lazy" src="36 Briarcliff Photos/4-location.jpeg" alt="Location">
-                <img loading="lazy" src="36 Briarcliff Photos/4.5-living room.jpeg" alt="Living Room">
-                <img loading="lazy" src="36 Briarcliff Photos/5-living room.jpeg" alt="Living Room">
-                <img loading="lazy" src="36 Briarcliff Photos/6-living room.jpeg" alt="Living Room">
-                <img loading="lazy" src="36 Briarcliff Photos/7-living room.jpeg" alt="Living Room">
-                <img loading="lazy" src="36 Briarcliff Photos/8-dining room.jpeg" alt="Dining Room">
-                <img loading="lazy" src="36 Briarcliff Photos/9-kitchen.jpeg" alt="Kitchen">
-                <img loading="lazy" src="36 Briarcliff Photos/10-downstairs bathroom.jpeg" alt="Downstairs Bathroom">
-                <img loading="lazy" src="36 Briarcliff Photos/11-downstairs bathroom.jpeg" alt="Downstairs Bathroom">
-                <img loading="lazy" src="36 Briarcliff Photos/12-downstairs bathroom.jpeg" alt="Downstairs Bathroom">
-                <img loading="lazy" src="36 Briarcliff Photos/13-downstairs bathroom.jpeg" alt="Downstairs Bathroom">
-                <img loading="lazy" src="36 Briarcliff Photos/14 upstairs hallway.jpeg" alt="Upstairs Hallway">
-                <img loading="lazy" src="36 Briarcliff Photos/15-king bedroom.jpeg" alt="King Bedroom">
-                <img loading="lazy" src="36 Briarcliff Photos/16-king bedroom.jpeg" alt="King Bedroom">
-                <img loading="lazy" src="36 Briarcliff Photos/17-king bedroom.jpeg" alt="King Bedroom">
-                <img loading="lazy" src="36 Briarcliff Photos/18-queen bedroom.jpeg" alt="Queen Bedroom">
-                <img loading="lazy" src="36 Briarcliff Photos/18-bunk room.jpeg" alt="Bunk Room">
-                <img loading="lazy" src="36 Briarcliff Photos/19-bunk room.jpeg" alt="Bunk Room">
-                <img loading="lazy" src="36 Briarcliff Photos/20-bunk room.jpeg" alt="Bunk Room">
-                <img loading="lazy" src="36 Briarcliff Photos/21-bunk bedroom.jpeg" alt="Bunk Bedroom">
-                <img loading="lazy" src="36 Briarcliff Photos/22-upstairs bathroom.jpeg" alt="Upstairs Bathroom">
-                <img loading="lazy" src="36 Briarcliff Photos/23-upstairs bathroom.jpeg" alt="Upstairs Bathroom">
-                <img loading="lazy" src="36 Briarcliff Photos/24-upstairs bathroom.jpeg" alt="Upstairs Bathroom">
-                <img loading="lazy" src="36 Briarcliff Photos/25-front yard.jpeg" alt="Front Yard">
-                <img loading="lazy" src="36 Briarcliff Photos/26-backyard.jpeg" alt="Backyard">
-                <img loading="lazy" src="36 Briarcliff Photos/27-backyard.jpeg" alt="Backyard">
-                <img loading="lazy" src="36 Briarcliff Photos/28-backyard.jpeg" alt="Backyard">
-                <img loading="lazy" src="36 Briarcliff Photos/29-backyard.jpeg" alt="Backyard">
-                <img loading="lazy" src="36 Briarcliff Photos/29.5-backyard.jpeg" alt="Backyard">
-                <img loading="lazy" src="36 Briarcliff Photos/30-backyard.jpeg" alt="Backyard">
-                <img loading="lazy" src="36 Briarcliff Photos/31-backyard.jpeg" alt="Backyard">
-                <img loading="lazy" src="36 Briarcliff Photos/32-backyard.jpeg" alt="Backyard">
-                <img loading="lazy" src="36 Briarcliff Photos/33-backyard.jpeg" alt="Backyard">
-                <img loading="lazy" src="36 Briarcliff Photos/34-backyard.jpeg" alt="Backyard">
-                <img loading="lazy" src="36 Briarcliff Photos/35-garage.jpeg" alt="Garage">
-                <img loading="lazy" src="36 Briarcliff Photos/36-garage.jpeg" alt="Garage">
-                <img loading="lazy" src="36 Briarcliff Photos/37-garage.jpeg" alt="Garage">
-                <img loading="lazy" src="36 Briarcliff Photos/38-garage.jpeg" alt="Garage">
-                <img loading="lazy" src="36 Briarcliff Photos/39-garage.jpeg" alt="Garage">
-                <img loading="lazy" src="36 Briarcliff Photos/40-garage.jpeg" alt="Garage">
-                <img loading="lazy" src="36 Briarcliff Photos/41-garage ev charger.jpeg" alt="Garage EV Charger">
-                <img loading="lazy" src="36 Briarcliff Photos/42-garage ev charger.jpeg" alt="Garage EV Charger">
-                <img loading="lazy" src="36 Briarcliff Photos/43-gargage ev charger.jpeg" alt="Garage EV Charger">
-            </div>
-        </div>
-
-        <!-- Sleeping Arrangements -->
-        <div class="section">
-            <h2>Sleeping Arrangements</h2>
-            <div class="sleeping-grid">
-                <div class="bedroom-card">
-                    <div class="beds">🛏️ King</div>
-                    <h4>Primary Bedroom</h4>
-                    <p>King memory foam bed with closet & dresser</p>
+            <h2>Our Properties</h2>
+            <div class="properties-grid">
+                <div class="property-card">
+                    <img loading="lazy" src="36 Briarcliff Photos/1-Hero.jpeg" alt="Family-Friendly by Polo + EV Charger">
+                    <div class="property-card-content">
+                        <div class="polo-badge">🏇 Across from Mashomack Polo</div>
+                        <h3>Family-Friendly by Polo + EV Charger</h3>
+                        <p>3 Bed / 2 Bath • Sleeps 10 • Pets Welcome • EV Charger</p>
+                        <div class="property-card-features">
+                            <span class="property-feature">🏠 3 BR</span>
+                            <span class="property-feature">🚿 2 BA</span>
+                            <span class="property-feature">⚡ EV Charger</span>
+                            <span class="property-feature">🎱 Game Room</span>
+                            <span class="property-feature">🔥 Fire Pit</span>
+                            <span class="property-feature">🐕 Pets OK</span>
+                        </div>
+                        <a href="property.html">View Property →</a>
+                    </div>
                 </div>
-                <div class="bedroom-card">
-                    <div class="beds">🛏️ Queen</div>
-                    <h4>Second Bedroom</h4>
-                    <p>Queen bed with walk-in closet</p>
-                </div>
-                <div class="bedroom-card">
-                    <div class="beds">🛏️ King + 2 Doubles</div>
-                    <h4>Bunk Room</h4>
-                    <p>Perfect for kids! Smart TV & wardrobe</p>
+                
+                <!-- Second property placeholder - coming soon -->
+                <div class="property-card" style="opacity: 0.7;">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&h=400&fit=crop" alt="Coming Soon">
+                    <div class="property-card-content">
+                        <div class="polo-badge" style="background: #e2e8f0; color: #718096;">🏇 Across from Mashomack Polo</div>
+                        <h3>Second Property</h3>
+                        <p>Coming Soon! Another beautiful rental in Pine Plains.</p>
+                        <div class="property-card-features">
+                            <span class="property-feature">Coming 2026</span>
+                        </div>
+                        <a href="#" style="background: #cbd5e0; cursor: not-allowed;">Coming Soon</a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Amenities -->
+        <!-- Hudson Valley Attractions -->
         <div class="section">
-            <h2>Amenities</h2>
-            <div class="amenities-grid">
-                <div class="amenity"><span class="amenity-icon">🍳</span> Full Kitchen</div>
-                <div class="amenity"><span class="amenity-icon">📶</span> Fast WiFi (600+ Mbps)</div>
-                <div class="amenity"><span class="amenity-icon">💻</span> Dedicated Workspace</div>
-                <div class="amenity"><span class="amenity-icon">🚗</span> Free Parking</div>
-                <div class="amenity"><span class="amenity-icon">🐕</span> Pets Welcome</div>
-                <div class="amenity"><span class="amenity-icon">📺</span> Smart TV</div>
-                <div class="amenity"><span class="amenity-icon">🔌</span> EV Charger (Level 2)</div>
-                <div class="amenity"><span class="amenity-icon">🧺</span> Washer & Dryer</div>
-                <div class="amenity"><span class="amenity-icon">🔑</span> Self Check-in</div>
-                <div class="amenity"><span class="amenity-icon">🎱</span> Game Room</div>
-                <div class="amenity"><span class="amenity-icon">🏒</span> Air Hockey</div>
-                <div class="amenity"><span class="amenity-icon">🏓</span> Ping Pong</div>
-                <div class="amenity"><span class="amenity-icon">⚽</span> Foosball</div>
-                <div class="amenity"><span class="amenity-icon">🔥</span> Fire Pit</div>
-                <div class="amenity"><span class="amenity-icon">🍖</span> BBQ Grill</div>
-                <div class="amenity"><span class="amenity-icon">🛖</span> Hammock</div>
-                <div class="amenity"><span class="amenity-icon">🧸</span> Kids' Swing Set</div>
-                <div class="amenity"><span class="amenity-icon">❄️</span> Air Conditioning</div>
-                <div class="amenity"><span class="amenity-icon">🔥</span> Heating</div>
-                <div class="amenity"><span class="amenity-icon">☕</span> Coffee Maker</div>
+            <h2>Explore Hudson Valley Attractions</h2>
+            <p style="margin-bottom: 25px; color: #4a5568;">Discover the best of the Hudson Valley during your stay:</p>
+            <div class="attractions-grid">
+                <div class="attraction-card">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=300&fit=crop" alt="Stissing Mountain">
+                    <div class="attraction-card-info">
+                        <h3>🥾 Stissing Mountain</h3>
+                        <p>Hiking trails with stunning views</p>
+                    </div>
+                </div>
+                <div class="attraction-card">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=500&h=300&fit=crop" alt="Rhinebeck">
+                    <div class="attraction-card-info">
+                        <h3>🍷 Rhinebeck & Red Hook</h3>
+                        <p>Dining, antiques, farm stands</p>
+                    </div>
+                </div>
+                <div class="attraction-card">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=500&h=300&fit=crop" alt="Fall Foliage">
+                    <div class="attraction-card-info">
+                        <h3>🍂 Fall Foliage</h3>
+                        <p>Stunning autumn colors</p>
+                    </div>
+                </div>
+                <div class="attraction-card">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1464207687429-7505649dae38?w=500&h=300&fit=crop" alt="Farm Breweries">
+                    <div class="attraction-card-info">
+                        <h3>🍺 Farm Breweries</h3>
+                        <p>Local craft beverages</p>
+                    </div>
+                </div>
+                <div class="attraction-card">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=500&h=300&fit=crop" alt="Bard College">
+                    <div class="attraction-card-info">
+                        <h3>🎭 Bard College & SPAC</h3>
+                        <p>Concerts and theater</p>
+                    </div>
+                </div>
+                <div class="attraction-card">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=500&h=300&fit=crop" alt="Hudson NY">
+                    <div class="attraction-card-info">
+                        <h3>🎨 Hudson (town)</h3>
+                        <p>Art galleries and antiques</p>
+                    </div>
+                </div>
+                <div class="attraction-card">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1551524559-8af4e6624178?w=500&h=300&fit=crop" alt="Ski Resorts">
+                    <div class="attraction-card-info">
+                        <h3>⛷️ Ski Resorts</h3>
+                        <p>30-45 minutes away</p>
+                    </div>
+                </div>
+                <div class="attraction-card">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=300&fit=crop" alt="Hot Air Balloon">
+                    <div class="attraction-card-info">
+                        <h3>🎈 Hot Air Balloon Rides</h3>
+                        <p>20 minutes away</p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -652,8 +491,7 @@
             <h2>Location</h2>
             <div class="location-box">
                 <h3>📍 Pine Plains, New York</h3>
-                <p>Nestled in the heart of the Hudson Valley, our home offers the perfect blend of rural tranquility and easy access to surrounding towns.</p>
-                <p><strong>Nearby:</strong></p>
+                <p>Nestled in the heart of the Hudson Valley, our homes offer the perfect blend of rural tranquility and easy access to surrounding towns.</p>
                 <ul>
                     <li>🏇 Mashomack Polo Fields – Right across the street!</li>
                     <li>🍎 Pine Plains Town Center – 5 minutes</li>
@@ -668,227 +506,19 @@
             </div>
         </div>
 
-        <!-- Availability Calendar -->
-        <div class="section">
-            <h2>Availability</h2>
-            <p style="margin-bottom: 20px; color: #4a5568;">Check real-time availability across all booking platforms. Green = available, Red = booked.</p>
-            
-            <div id="calendar-app">
-                <div class="calendar-controls">
-                    <h3 id="calendar-month-year"></h3>
-                    <div class="calendar-nav">
-                        <button onclick="changeMonth(-1)">← Prev</button>
-                        <button onclick="changeMonth(1)">Next →</button>
-                    </div>
-                </div>
-                
-                <div class="calendar-legend">
-                    <div class="legend-item">
-                        <div class="legend-color legend-available"></div>
-                        <span>Available</span>
-                    </div>
-                    <div class="legend-item">
-                        <div class="legend-color legend-booked"></div>
-                        <span>Booked</span>
-                    </div>
-                </div>
-                
-                <div class="calendar-grid" id="calendar-grid">
-                    <div class="calendar-loading">Loading availability...</div>
-                </div>
-            </div>
-        </div>
-
         <!-- Contact CTA -->
         <div class="contact-cta">
             <h2>Ready to Book?</h2>
-            <p>We'd love to host you! Send us a message with your preferred dates and we'll get back to you within the hour.</p>
-            <a href="mailto:brairclifflane@gmail.com?subject=Booking Inquiry - Pine Plains Vacation Rental">📧 Email Us to Book</a>
+            <p>We'd love to host you! Contact us directly to check availability and make a reservation.</p>
+            <div class="contact-buttons">
+                <a href="mailto:brairclifflane@gmail.com?subject=Booking Inquiry - GetawayPads">📧 Email Us</a>
+                <a href="tel:+18586349959" class="phone">📞 858-634-9959</a>
+            </div>
         </div>
     </div>
 
-    <!-- Platforms -->
-    <div class="platforms">
-        <p>Compare prices across all platforms:</p>
-        <a href="https://www.airbnb.com/rooms/1108872443002863583" target="_blank">Airbnb</a>
-        <a href="https://www.vrbo.com/4019978" target="_blank">VRBO</a>
-        <a href="https://www.furnishedfinder.com/property/769997_1" target="_blank">FurnishFinder</a>
-    </div>
-
     <footer>
-        <p>© 2026 Pine Plains Vacation Rentals | Family-Friendly by Mashomack Polo Fields</p>
+        <p>© 2026 GetawayPads | Vacation Rentals in Pine Plains, NY</p>
     </footer>
-
-    <script>
-        // iCal feeds
-        const ICAL_FEEDS = [
-            'https://www.airbnb.com/calendar/ical/1108872443002863583.ics?t=644adf8bac774d5e814090872989fdd7',
-            'http://www.vrbo.com/icalendar/d653f031728d480a9ffa4f50aa743412.ics?nonTentative'
-        ];
-        
-        let bookedDates = new Set();
-        let currentMonth = new Date().getMonth();
-        let currentYear = new Date().getFullYear();
-        
-        // Parse iCal date format (YYYYMMDD or YYYY-MM-DD)
-        function parseICalDate(dateStr) {
-            if (!dateStr) return null;
-            // Handle YYYY-MM-DD format
-            if (dateStr.includes('-')) {
-                return new Date(dateStr + 'T00:00:00');
-            }
-            // Handle YYYYMMDD format
-            const year = dateStr.substring(0, 4);
-            const month = dateStr.substring(4, 6);
-            const day = dateStr.substring(6, 8);
-            return new Date(year, month - 1, day);
-        }
-        
-        // Parse iCal feed
-        function parseICal(icsData) {
-            const lines = icsData.split(/\r?\n/);
-            let inEvent = false;
-            let currentEvent = {};
-            const events = [];
-            
-            for (let line of lines) {
-                if (line.startsWith('BEGIN:VEVENT')) {
-                    inEvent = true;
-                    currentEvent = {};
-                } else if (line.startsWith('END:VEVENT')) {
-                    inEvent = false;
-                    if (currentEvent.dtstart && currentEvent.dtend) {
-                        events.push(currentEvent);
-                    }
-                } else if (inEvent) {
-                    if (line.startsWith('DTSTART')) {
-                        const match = line.match(/DTSTART[;:].*?(\d{8}|\d{4}-\d{2}-\d{2})/);
-                        if (match) {
-                            currentEvent.dtstart = parseICalDate(match[1]);
-                        }
-                    } else if (line.startsWith('DTEND')) {
-                        const match = line.match(/DTEND[;:].*?(\d{8}|\d{4}-\d{2}-\d{2})/);
-                        if (match) {
-                            currentEvent.dtend = parseICalDate(match[1]);
-                        }
-                    }
-                }
-            }
-            
-            return events;
-        }
-        
-        // Mark date ranges as booked
-        function markBooked(events) {
-            for (let event of events) {
-                if (!event.dtstart || !event.dtend) continue;
-                
-                let current = new Date(event.dtstart);
-                const end = new Date(event.dtend);
-                
-                while (current < end) {
-                    const dateKey = current.toISOString().split('T')[0];
-                    bookedDates.add(dateKey);
-                    current.setDate(current.getDate() + 1);
-                }
-            }
-        }
-        
-        // Fetch all iCal feeds
-        async function fetchAvailability() {
-            const grid = document.getElementById('calendar-grid');
-            
-            try {
-                // Fetch all feeds (note: may need CORS proxy in production)
-                const promises = ICAL_FEEDS.map(async (url) => {
-                    try {
-                        const response = await fetch(url);
-                        if (!response.ok) throw new Error('Failed to fetch');
-                        const text = await response.text();
-                        return parseICal(text);
-                    } catch (e) {
-                        console.warn('Failed to fetch feed:', url, e);
-                        return [];
-                    }
-                });
-                
-                const allEvents = await Promise.all(promises);
-                
-                // Flatten and mark booked dates
-                allEvents.flat().forEach(events => markBooked(events));
-                
-                renderCalendar();
-            } catch (error) {
-                grid.innerHTML = '<div class="calendar-error">Unable to load availability. Please check our Airbnb or VRBO listings for current availability.</div>';
-            }
-        }
-        
-        // Render calendar
-        function renderCalendar() {
-            const grid = document.getElementById('calendar-grid');
-            const monthYear = document.getElementById('calendar-month-year');
-            
-            const months = ['January', 'February', 'March', 'April', 'May', 'June',
-                           'July', 'August', 'September', 'October', 'November', 'December'];
-            monthYear.textContent = `${months[currentMonth]} ${currentYear}`;
-            
-            const firstDay = new Date(currentYear, currentMonth, 1).getDay();
-            const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
-            
-            let html = '';
-            const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-            
-            // Day headers
-            for (let day of dayNames) {
-                html += `<div class="calendar-header">${day}</div>`;
-            }
-            
-            // Empty cells before first day
-            for (let i = 0; i < firstDay; i++) {
-                html += '<div class="calendar-day empty"></div>';
-            }
-            
-            // Days of month
-            for (let day = 1; day <= daysInMonth; day++) {
-                const date = new Date(currentYear, currentMonth, day);
-                const dateKey = date.toISOString().split('T')[0];
-                const isBooked = bookedDates.has(dateKey);
-                const isPast = date < new Date().setHours(0, 0, 0, 0);
-                
-                let classes = 'calendar-day';
-                if (isPast) {
-                    classes += ' empty';
-                } else if (isBooked) {
-                    classes += ' booked';
-                } else {
-                    classes += ' available';
-                }
-                
-                html += `
-                    <div class="${classes}">
-                        <span class="day-num">${day}</span>
-                        <span class="status">${isPast ? '' : (isBooked ? 'Booked' : 'Available')}</span>
-                    </div>
-                `;
-            }
-            
-            grid.innerHTML = html;
-        }
-        
-        function changeMonth(delta) {
-            currentMonth += delta;
-            if (currentMonth > 11) {
-                currentMonth = 0;
-                currentYear++;
-            } else if (currentMonth < 0) {
-                currentMonth = 11;
-                currentYear--;
-            }
-            renderCalendar();
-        }
-        
-        // Initialize
-        fetchAvailability();
-    </script>
 </body>
 </html>
